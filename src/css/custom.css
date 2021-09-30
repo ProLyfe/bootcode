@@ -177,3 +177,8 @@ button {
 .example {
   margin-top: 20px;
 }
+
+.ancrage {
+  /* border: 3px solid red; */
+  width: 100%;
+}

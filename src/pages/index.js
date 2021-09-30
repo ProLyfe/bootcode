@@ -17,7 +17,9 @@ function HomepageHeader() {
               <p>Take it, use it</p>
             </div>
             <div className="buttonContainer">
-              <button className="register">Register</button>
+              <a href="https://bootcode.web.app/#formulaire-ancrage" className="ancrage">
+              <button className="register" href="#formulaire-ancrage">Register</button>
+              </a>
             </div>
           </div>
         <div>

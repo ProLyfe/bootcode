@@ -2,23 +2,24 @@ import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import '../css/custom.css'
+
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAJVdDve1Z2haJVZ8UNmKG1L3M9jVatn1g",
-  authDomain: "bootcode.firebaseapp.com",
-  projectId: "bootcode",
-  storageBucket: "bootcode.appspot.com",
-  messagingSenderId: "321735501457",
-  appId: "1:321735501457:web:a72fdc99da8b547e860130"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAJVdDve1Z2haJVZ8UNmKG1L3M9jVatn1g",
+//   authDomain: "bootcode.firebaseapp.com",
+//   projectId: "bootcode",
+//   storageBucket: "bootcode.appspot.com",
+//   messagingSenderId: "321735501457",
+//   appId: "1:321735501457:web:a72fdc99da8b547e860130"
+// };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
 
 
 const FeatureList = [
@@ -85,8 +86,9 @@ export function HomepageTextArea() {
     <section className={styles.features}>
       <div className="container-textArea">
         <div className="button-side">
-          <img height="600" className="img-textArea" src='../../static/img/second.svg'/>
-              
+          {/* <img height="600" className="img-textArea" src='../../static/img/seconde.svg'/> */}
+          <img height="600" className="img-textArea" src='https://cdn.discordapp.com/attachments/892698830670290944/893107950099521537/unknown.png'/>
+
         </div>
         <div className="text-side">
           <p className="text-area-title">Ce que vous pouvez faire :</p>
@@ -97,7 +99,9 @@ export function HomepageTextArea() {
             <li>Apprentissage facile du code </li>
             <li>Utilisateur et code vérifié </li>
           </ul>
+          <a href="https://bootcode.web.app/#formulaire-ancrage" className="ancrage">
           <button className="register">Register</button>
+          </a>
         </div>
       </div>
     </section>
@@ -112,7 +116,6 @@ export function Footer() {
         <div>
           <ul className="ul-footer">
             <li>© 2021 BootCode, Inc</li>
-            <li>Test</li>
           </ul>
         </div>
       </div>
@@ -135,7 +138,7 @@ export function Formulaire() {
         <div className="form-div">
           <h2>Rejoignez nous</h2>
           <form>
-            <input className="mail-form" placeholder="E-mail" type="email" require onChange={e => setMail(e.target.value)}></input>
+            <input id="formulaire-ancrage" className="mail-form" placeholder="E-mail" type="email" require onChange={e => setMail(e.target.value)}></input>
             <button className="register" onClick={handleSubmit}>Rejoindre</button>
           </form>
         </div>
