@@ -2,35 +2,51 @@ import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import '../css/custom.css'
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAJVdDve1Z2haJVZ8UNmKG1L3M9jVatn1g",
+  authDomain: "bootcode.firebaseapp.com",
+  projectId: "bootcode",
+  storageBucket: "bootcode.appspot.com",
+  messagingSenderId: "321735501457",
+  appId: "1:321735501457:web:a72fdc99da8b547e860130"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Facile à utiliser',
     Svg: require('../../static/img/first.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Récuperer en un clique des morceaux de code d'une librairie en constante évolution
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/second.svg').default,
+    title: "Etudier en s'amusant",
+    Svg: require('../../static/img/quatre.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Apprener facilement le développement web grâce aux différents bouts de codes disponibles
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Partager avec la communauté',
     Svg: require('../../static/img/trois.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Aider les nouveaux développeurs en
+        partageant votre propre code 
       </>
     ),
   },
@@ -69,17 +85,19 @@ export function HomepageTextArea() {
     <section className={styles.features}>
       <div className="container-textArea">
         <div className="button-side">
-              <button className="register">Register</button>
+          <img height="600" className="img-textArea" src='../../static/img/second.svg'/>
+              
         </div>
         <div className="text-side">
-          <p className="text-area-title">Titre du bloc</p>
+          <p className="text-area-title">Ce que vous pouvez faire :</p>
           <ul>
-            <li>Premier module</li>
-            <li>Second module</li>
-            <li>Troisieme module</li>
-            <li>Quatrieme module</li>
-            <li>Cinquieme module</li>
+            <li>Copier le code que vous voulez facilement</li>
+            <li>Partager votre code avec la communauté </li>
+            <li>Trouvez toutes sortes d’éléments pour incrémenter votre site</li>
+            <li>Apprentissage facile du code </li>
+            <li>Utilisateur et code vérifié </li>
           </ul>
+          <button className="register">Register</button>
         </div>
       </div>
     </section>
@@ -104,14 +122,21 @@ export function Footer() {
 
 
 export function Formulaire() {
+
+  const [mail, setMail] = useState('');
+
+  const handleSubmit = () => {
+    console.log(mail);
+  };
+
   return (
     <section className={styles.formulaire}>
       <div className="container-features">
         <div className="form-div">
           <h2>Rejoignez nous</h2>
           <form>
-            <input className="mail-form" placeholder="E-mail" type="email" require></input>
-            <button className="register">Rejoindre</button>
+            <input className="mail-form" placeholder="E-mail" type="email" require onChange={e => setMail(e.target.value)}></input>
+            <button className="register" onClick={handleSubmit}>Rejoindre</button>
           </form>
         </div>
       </div>

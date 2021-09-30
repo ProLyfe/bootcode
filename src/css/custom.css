@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #eae7fd;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -29,6 +29,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 body {
   overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
@@ -51,8 +52,9 @@ button {
 }
 
 .register {
-  background-color: aquamarine;
+  background-color: #000;
 }
+
 .plus {
   background-color: cadetblue;
 }
@@ -63,13 +65,16 @@ button {
 
 .pres {
   width: 45%;
+  text-align: start;
 }
 
 .textContainer h1 {
-  font-size: 80px;
+  font-size: 72px;
+  color: black;
 }
 .textContainer p {
   font-size: 40px;
+  color: black;
 }
 
 .row {
@@ -90,17 +95,17 @@ button {
 }
 
 .button-side {
-  width: 35%;
+  width: 60%;
   padding: 50px;
 }
 
 .text-side {
-  padding: 50px;
-  font-size: 30px;
+  padding-top: 120px;
+  font-size: 18px;
 }
 
-.text-side > ul{
-  list-style: none;
+.text-side ul {
+  margin-bottom: 110px;
 }
 
 .text-side > li{
@@ -133,6 +138,7 @@ button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #eae7fd;
 }
 
 .input-example {
@@ -145,6 +151,7 @@ button {
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-evenly;
+  background-color: #eae7fd;
 }
 
 .renduButton {
@@ -169,8 +176,4 @@ button {
 
 .example {
   margin-top: 20px;
-}
-
-.div-input-example {
-  background-color: blue;
 }

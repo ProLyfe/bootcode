@@ -18,11 +18,10 @@ function HomepageHeader() {
             </div>
             <div className="buttonContainer">
               <button className="register">Register</button>
-              <button className="plus">Voir plus</button>
             </div>
           </div>
         <div>
-          <img src="../../static/img/logoBoot.png" height="500"/>
+          <img src="https://media.discordapp.net/attachments/892698830670290944/893142397901471754/unknown.png" height="500"/>
         </div>        
       </div>
     </header>
