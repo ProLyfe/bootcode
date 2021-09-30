@@ -123,7 +123,11 @@ export function ExempleSection() {
   
   return (
     <section className={styles.exemple}>
-      <div className="container-features">
+      <div className="container-features exempleSelection">
+      <div className="renduButton">
+            {/* <button className="register">Exemple</button> */}
+            <button className="buttonExample">Exemple</button>
+        </div>
         <div className="row">
           <pre>
           <code>
@@ -131,7 +135,13 @@ export function ExempleSection() {
             <br></br>
             button &#10100;
             <br></br>
-              text-align: center
+              text-align: center;
+              <br></br>
+              background-color: purple;
+              <br></br>
+              border-radius: 20px;
+              <br></br>
+              color: white;
               <br></br>
               &#10101;
             <br></br>
@@ -145,24 +155,43 @@ export function ExempleSection() {
 }
 
 export function ExempleSection2() {
-  
+
+  const [inputText, setInputText] = useState('');
+  console.log(inputText)
+
+
   return (
     <section className={styles.exemple}>
       <div className="container-features">
-        <div className="row">
+        <div className="second-example-section">
+          <div>
+            <input className="input-example" type="text" onChange={e => setInputText(e.target.value)}></input>
+            <p>{inputText}</p>
+          </div>
+          <div className="example">
+          <pre>
+          <code>
+            &lt;input class="input-example" type="text"&gt;
+          </code>
+          </pre>
           <pre>
           <code>
             &lt;style&gt;
             <br></br>
-            button &#10100;
+            .input-example &#10100;
             <br></br>
-              text-align: center
-              <br></br>
+            &#160;height: 60px;
+            <br></br>
+            &#160;width: 600px;
+            <br></br>
+            &#160;font-size: 24px;
+            <br></br>
               &#10101;
             <br></br>
             &lt;/style&gt;
           </code>
           </pre>
+          </div>
         </div>
       </div>
     </section>

@@ -114,6 +114,7 @@ button {
 .mail-form {
   height: 55px;
   width: 50%;
+  font-size: 24px;
 }
 
 .form-div {
@@ -126,4 +127,36 @@ button {
 
 .form-div > form > button {
   width: initial;
+}
+
+.second-example-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input-example {
+  height: 60px;
+  width: 600px;
+  font-size: 24px;
+}
+
+.exempleSelection {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.renduButton {
+  border: 1px solid blue;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 231, 231);
+}
+
+.buttonExample {
+  background-color: purple;
+  width: 200px;
 }
