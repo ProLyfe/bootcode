@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import '../css/custom.css'
@@ -67,18 +67,19 @@ export default function HomepageFeatures() {
 export function HomepageTextArea() {
   return (
     <section className={styles.features}>
-      <div className="container-features">
-        <div className="row">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
-            snihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      <div className="container-textArea">
+        <div className="button-side">
+              <button className="register">Register</button>
+        </div>
+        <div className="text-side">
+          <p className="text-area-title">Titre du bloc</p>
+          <ul>
+            <li>Premier module</li>
+            <li>Second module</li>
+            <li>Troisieme module</li>
+            <li>Quatrieme module</li>
+            <li>Cinquieme module</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -90,8 +91,78 @@ export function Footer() {
   return (
     <section className={styles.footer}>
       <div className="container-features">
+        <div>
+          <ul className="ul-footer">
+            <li>© 2021 BootCode, Inc</li>
+            <li>Test</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+export function Formulaire() {
+  return (
+    <section className={styles.formulaire}>
+      <div className="container-features">
+        <div className="form-div">
+          <h2>Rejoignez nous</h2>
+          <form>
+            <input className="mail-form" placeholder="E-mail" type="email" require></input>
+            <button className="register">Rejoindre</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function ExempleSection() {
+  
+  return (
+    <section className={styles.exemple}>
+      <div className="container-features">
         <div className="row">
-          <p>Copyright BootCode</p>
+          <pre>
+          <code>
+            &lt;style&gt;
+            <br></br>
+            button &#10100;
+            <br></br>
+              text-align: center
+              <br></br>
+              &#10101;
+            <br></br>
+            &lt;/style&gt;
+          </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function ExempleSection2() {
+  
+  return (
+    <section className={styles.exemple}>
+      <div className="container-features">
+        <div className="row">
+          <pre>
+          <code>
+            &lt;style&gt;
+            <br></br>
+            button &#10100;
+            <br></br>
+              text-align: center
+              <br></br>
+              &#10101;
+            <br></br>
+            &lt;/style&gt;
+          </code>
+          </pre>
         </div>
       </div>
     </section>

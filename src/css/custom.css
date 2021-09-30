@@ -27,6 +27,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -72,4 +76,54 @@ button {
   display: flex;
   justify-content: center;
   padding: 50px;
+}
+
+.ul-footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-textArea {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-side {
+  width: 35%;
+  padding: 50px;
+}
+
+.text-side {
+  padding: 50px;
+  font-size: 30px;
+}
+
+.text-side > ul{
+  list-style: none;
+}
+
+.text-side > li{
+  margin-bottom: 20px;
+}
+
+.text-area-title {
+  font-size: 45px;
+}
+
+.mail-form {
+  height: 55px;
+  width: 50%;
+}
+
+.form-div {
+  text-align: center;
+}
+
+.form-div > form {
+  padding: 15px;
+}
+
+.form-div > form > button {
+  width: initial;
 }

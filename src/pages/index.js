@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-import {HomepageTextArea, Footer} from '../components/HomepageFeatures';
+import {HomepageTextArea, Footer, Formulaire, ExempleSection, ExempleSection2} from '../components/HomepageFeatures';
 import '../css/custom.css';
 
 function HomepageHeader() {
@@ -22,7 +22,7 @@ function HomepageHeader() {
             </div>
           </div>
         <div>
-          <img src="../../static/img/logoBoot.png" height="260"/>
+          <img src="../../static/img/logoBoot.png" height="500"/>
         </div>        
       </div>
     </header>
@@ -33,10 +33,26 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
       <div>
+          {/* Main Presentation */}
         <HomepageHeader />
         <main>
-          <HomepageTextArea />
+
+          {/* Text / Présentation */}
+          <HomepageTextArea /> 
+
+          {/* Exemple Code  */}
+          <ExempleSection />
+          {/* Exemple Code  */}
+          <ExempleSection2 />
+
+
+          {/* Les 3 valeurs */}
           <HomepageFeatures />
+
+          {/* Formulaire */}
+          <Formulaire />
+
+          {/* Footer */}
           <Footer />
         </main>
       </div>
