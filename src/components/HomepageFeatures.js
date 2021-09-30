@@ -6,7 +6,7 @@ import '../css/custom.css'
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/first.svg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/second.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/trois.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -124,16 +124,18 @@ export function ExempleSection() {
   return (
     <section className={styles.exemple}>
       <div className="container-features exempleSelection">
-      <div className="renduButton">
-            {/* <button className="register">Exemple</button> */}
-            <button className="buttonExample">Exemple</button>
-        </div>
-        <div className="row">
+      <div className="row exampleButton">
+          <pre>
+          <code>
+              &lt;button class="myButton"&gt;
+              <br></br>
+            </code>
+          </pre>
           <pre>
           <code>
             &lt;style&gt;
             <br></br>
-            button &#10100;
+            .myButton &#10100;
             <br></br>
               text-align: center;
               <br></br>
@@ -148,6 +150,25 @@ export function ExempleSection() {
             &lt;/style&gt;
           </code>
           </pre>
+          <pre>
+            <code>
+              &lt;script&gt;
+              <br></br>
+              const button = document.querySelector('.myButton');
+              <br></br>
+              button.addEventListener("click", () =&gt; &#10100;
+              <br></br>
+              alert("Je suis cliqué");
+              <br></br>
+              &#10101;)
+              <br></br>
+              &lt;/script&gt;
+            </code>
+          </pre>
+        </div>
+      <div className="renduButton">
+            {/* <button className="register">Exemple</button> */}
+            <button className="buttonExample" onClick={() => alert('Je suis cliqué')}>Exemple</button>
         </div>
       </div>
     </section>
@@ -164,32 +185,49 @@ export function ExempleSection2() {
     <section className={styles.exemple}>
       <div className="container-features">
         <div className="second-example-section">
-          <div>
+          <div className="div-input-example">
             <input className="input-example" type="text" onChange={e => setInputText(e.target.value)}></input>
             <p>{inputText}</p>
           </div>
           <div className="example">
           <pre>
-          <code>
-            &lt;input class="input-example" type="text"&gt;
-          </code>
+            <code>
+              &lt;input class="input-example" type="text"&gt;
+              <br></br>
+              &lt;p id="p-example"&gt;
+            </code>
           </pre>
           <pre>
-          <code>
-            &lt;style&gt;
-            <br></br>
-            .input-example &#10100;
-            <br></br>
-            &#160;height: 60px;
-            <br></br>
-            &#160;width: 600px;
-            <br></br>
-            &#160;font-size: 24px;
-            <br></br>
-              &#10101;
-            <br></br>
-            &lt;/style&gt;
-          </code>
+            <code>
+              &lt;style&gt;
+              <br></br>
+              .input-example &#10100;
+              <br></br>
+              &#160;height: 60px;
+              <br></br>
+              &#160;width: 600px;
+              <br></br>
+              &#160;font-size: 24px;
+              <br></br>
+                &#10101;
+              <br></br>
+              &lt;/style&gt;
+            </code>
+          </pre>
+          <pre>
+            <code>
+              &lt;script&gt;
+              <br></br>
+              const test = document.getElementsByClassName('test')[0];
+              <br></br>
+              test.addEventListener("keyup", () =&gt; &#10100;
+              <br></br>
+              document.getElementById("demo").innerHTML = test.value;
+              <br></br>
+              &#10101;)
+              <br></br>
+              &lt;/script&gt;
+            </code>
           </pre>
           </div>
         </div>

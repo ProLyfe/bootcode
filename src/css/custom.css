@@ -47,7 +47,7 @@ button {
   color: black;
   font-size: 18px;
   border: none;
-  border-radius: 20px;
+  color: white;
 }
 
 .register {
@@ -142,21 +142,35 @@ button {
 }
 
 .exempleSelection {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .renduButton {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(241, 231, 231);
 }
 
 .buttonExample {
   background-color: purple;
   width: 200px;
+  border-radius: 20px;
+
+}
+
+.exampleButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.example {
+  margin-top: 20px;
+}
+
+.div-input-example {
+  background-color: blue;
 }
